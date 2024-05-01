@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+<section id="food-menu">
+<h2 class="food-menu-heading">Your order</h2>
+<div class="food-menu-container container" id="order-list">
+
+</div>
+
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://static.vecteezy.com/system/resources/previews/003/047/085/original/order-confirmation-and-verification-vector.jpg" alt="" style="height: 600px;"/>
+            </div>
+
+            <div class="form-container">
+                <h2>Confirm Order</h2>
+                <p id="total"></p>
+                <input type="text" placeholder="Your Name" id="name"/>
+                <input type="email" placeholder="E-Mail" id="email"/>
+                <input type="text" placeholder="Your Age" id="age"/>
+                <div class="container">
+                    <h1 class="text-center mt-5">Paypal Payment</h1>
+                    <form method="post" action="payment/create" class="mt-5 card p-3">
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Pay with Paypal</button>
+                        </div>
+                    </form>
+
+                </div>
+                <textarea
+                        id="message"
+                        cols="30"
+                        rows="6"
+                        placeholder="Type Your Message"
+                ></textarea>
+
+                <form action="" method="POST">
+                    <div class="g-recaptcha" data-sitekey="6LcYyskpAAAAAL54Kx2OstUuwYcG87r_DzMl_kDs" data-action="LOGIN"></div>
+                    <br/>
+                    <input type="submit" value="Submit">
+                </form>
+                <a class="btn btn-primary" onclick="{addCustomer(); sendEmail()}">Submit</a>
+            </div>
+        </div>
+    </section>
+
+    <script th:src="@{/js/order.js}">
+
+    </script>
+    <script th:src="@{/js/main.js}"></script>
+</section>
+</body>
+</html>

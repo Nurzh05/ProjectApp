@@ -1,4 +1,4 @@
-package com.example.project1.config.paypal;
+package com.example.project1.paypal;
 
 import com.paypal.api.payments.*;
 import com.paypal.base.rest.APIContext;

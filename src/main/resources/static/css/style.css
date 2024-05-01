@@ -1,0 +1,87 @@
+h4 {
+    text-align: center;
+    color: #fff; /* Цвет текста */
+}
+body {
+    font-family: "Roboto Light", sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://wallpapercrafter.com/desktop/285935-tree-sunlight-background-relaxation-relaxing.jpg");
+    background-size: cover; /* Убедитесь, что изображение занимает весь фон */
+}
+
+
+form {
+    text-align: center;
+    margin: 20px 170px;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный фон для формы */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы формы */
+}
+
+form input {
+
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #007bff; /* Граница для текстовых полей */
+    border-radius: 5px; /* Закругленные углы для текстовых полей */
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Закругленные углы для кнопки */
+}
+h1 {
+    text-align: center;
+    color: #fff; /* Цвет текста */
+    font-size: 100px;
+}
+h4 {
+    text-align: center;
+    color: #fff; /* Цвет текста */
+}
+body {
+    font-family: "Roboto Light", sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg");
+    background-size: cover; /* Убедитесь, что изображение занимает весь фон */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный фон для таблицы */
+    border-radius: 20px; /* Закругленные углы таблицы */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table td button {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Закругленные углы кнопок в ячейках */
+}
+
+table td button.edit-button {
+    background-color: #009933;
+}

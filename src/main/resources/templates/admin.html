@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADMIN</title>
+</head>
+<body>
+    <h4>Add Goods</h4>
+    <input type="text" placeholder="Name" id="dish-name" required>
+    <input type="text" placeholder="Description" id="dish-description" required>
+    <input type="text" placeholder="Category" id="dish-category" required>
+    <input type="text" placeholder="Price" id="dish-price" required>
+    <form id="imageUploadForm" enctype="multipart/form-data">
+        <label for="fileInput">Select Image:</label>
+        <input type="file" id="fileInput" name="image" accept="image/*" required>
+        <br>
+    </form>
+    <button onclick="addDish(token)">Add</button>
+    <h4>Catalog</h4>
+    <table>
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="dish-list">
+        <!-- List of contacts will be displayed here -->
+        </tbody>
+
+    </table>
+    <button onclick="loadMenuAdmin()">load menu</button>
+    <h4>Customers</h4>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody id="guest-list">
+        <!-- List of contacts will be displayed here -->
+        </tbody>
+
+    </table>
+    <button onclick="loadCustomers()">load customers</button>
+
+</body>
+</html>
